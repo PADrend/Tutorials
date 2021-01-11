@@ -3,7 +3,7 @@ title: Building PADrend from source
 summary: This tutorial describes how to build PADrend from source code.
 permalink: installation_guide
 author: Benjamin Eikel, Claudius Jähn, Ralf Petring, Sascha Brandt
-last_updated: April, 2020
+last_updated: January, 2021
 category: Installation Guide@0
 order: 0
 ---
@@ -16,13 +16,9 @@ Make sure that your C++ compiler works as expected by compiling a simple C++ pro
 
 * On GNU/Linux and OS X, you can choose between [GCC](http://gcc.gnu.org/)  (>=4.7) and [ Clang](http://clang.llvm.org/) (>=3.1).
 * On Windows, you can use [Mingw-w64](http://mingw-w64.org)
-	* Download the latest [mingw-w64-install.exe](http://sourceforge.net/projects/mingw-w64/files/) and install it using the following settings: 
-		* Version: 8.1.0 (at least 5.1.0)
-		* Architecture: x86_64
-		* Threads: posix
-		* Exception: seh
-		* Build revision: largest available
-		* Destination folder: `c:\mingw-w64` (the actual MinGW will then be installed in c:\mingw-w64\mingw64).
+	* Download the latest [Mingw-w64 version](http://winlibs.com/#download) (Win64 without LLVM/Clang/LLD/LLDB)
+	* Extract the archive and copy its contents (the `mingw64` folder) to `C:\mingw-w64\`
+	* Your MinGW-w64 installation should now be in `C:\mingw-w64\mingw64\`
 
 ### CMake (>=3.1.0)
 * The build system of PADrend is [CMake](http://www.cmake.org/).
